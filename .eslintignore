@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+src
+=======
+third-party
+./dist
+./src/assets/third-party
+./build
+./config
+./src/assets/third-party/iconfont.js
+/static/vue-calendar-component
+
+>>>>>>> stable

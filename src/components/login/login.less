@@ -1,0 +1,158 @@
+.big-container {
+    width: 100%;
+    height: 100%;
+}
+.topHeader {
+    padding: 0 10%;
+    height: 80px;
+    background: #fff;
+    .logoBox {
+        display: inline-block;
+        line-height: 80px;
+        width: 100px;
+        img {
+            width: 100%;
+            // line-height: 80px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+}
+.loginContainer {
+    height: -webkit-calc(100% - 80px);
+    height: -moz-calc(100% - 80px);
+    height: calc(100% - 80px);
+    position: relative;
+    .loginBox {
+        position: absolute;
+        box-sizing: border-box;
+        padding: 20px 50px;
+        z-index: 3;
+        top: 50%;
+        right: 10%;
+        width: 360px;
+        height: 436px;
+        padding: 30px;
+        background: #fff;
+        box-shadow: 2px 2px 16px 2px rgba(1, 24, 89, 0.5);
+        transform: translateY(-50%);
+    }
+    .el-carousel {
+        height: 100%;
+    }
+    .el-carousel__item h3 {
+        color: #475669;
+        font-size: 18px;
+        opacity: 0.75;
+        line-height: 300px;
+        margin: 0;
+    }
+    .el-carousel__item:nth-child(2n) {
+        // background: url(../../../static/images/banner1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .el-carousel__item:nth-child(2n + 1) {
+        //background: url(../../../static/images/banner1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .el-carousel__item:nth-child(2n + 2) {
+        //background: url(../../../static/images/banner1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.loginHeader {
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: #0e38b1;
+        font-size: 14px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.login-form {
+    margin-top: 30px;
+}
+/deep/ .el-form--label-top .el-form-item__label {
+    padding: 0;
+    font-weight: bold;
+    line-height: 24px;
+}
+.forget-text {
+    text-align: right;
+    a {
+        color: #0e38b1;
+        font-size: 14px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.signUp-box {
+    width: 510px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .sign-header {
+        color: #fff;
+        text-align: center;
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 14px;
+            margin-top: 10px;
+            a {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+    .signForm {
+        margin-top: 20px;
+        background: #fff;
+        padding: 20px 40px;
+        border-radius: 6px;
+    }
+}
+.submitBox {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.failureBox {
+    position: absolute;
+    color: #f56c6c;
+    font-size: 12px;
+    line-height: 16px;
+    top: -26px;
+    left: 0;
+}
+// .signForm /deep/ .el-form-item__label{
+//   color: #333;
+//   font-size: 14px;
+//   line-height: 20px;
+//   font-weight: normal
+// }
+.signBottom {
+    background: #fff;
+    height: 80px;
+    padding: 0 10%;
+    .bottomMain {
+        width: 700px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        span {
+            color: #666;
+            font-size: 14px;
+            line-height: 80px;
+            font-weight: bold;
+        }
+    }
+}

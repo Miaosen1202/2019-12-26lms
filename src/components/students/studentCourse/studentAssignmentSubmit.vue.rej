@@ -1,0 +1,9 @@
+diff a/src/components/students/studentCourse/studentAssignmentSubmit.vue b/src/components/students/studentCourse/studentAssignmentSubmit.vue	(rejected hunks)
+@@ -302 +302,3 @@
+-                    <span v-show="assigncomm"><b>{{ $t("message.ASSIGNMENT.comments") }}:</b></span>
++                    <span
++                        v-show="assigncomm"
++                    ><b>{{ $t("message.ASSIGNMENT.comments") }}:</b></span>
+@@ -358 +360 @@ export default {
+-            assigncomm:true,
++            assigncomm: true,

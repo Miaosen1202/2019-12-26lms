@@ -1,0 +1,161 @@
+.resourceHeader {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+    }
+    .back {
+        font-size: 28px;
+        color: #333;
+        cursor: pointer;
+    }
+}
+.resourceMain {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 72px;
+    .resourceLeft {
+        width: 74%;
+        .resourceTitle {
+            color: #666;
+            font-size: 14px;
+            margin: 32px 0;
+        }
+        .courseResource_box {
+            .update-tips {
+                font-size: 16px;
+                color: #333;
+                line-height: 20px;
+                font-weight: bold;
+            }
+            .update-box {
+                margin-top: 16px;
+                background: #f4f4f4;
+                padding: 20px;
+                .update-list {
+                    li {
+                        & > h1 {
+                            & > i {
+                                color: #f13026;
+                            }
+                            font-size: 16px;
+                            color: #666;
+                            font-weight: bold;
+                        }
+                        .radioList {
+                            margin-top: 20px;
+                            width: 100%;
+                            .el-radio {
+                                width: 100%;
+                            }
+                            li {
+                                margin-bottom: 10px;
+                                width: 100%;
+                                // height: 30px;
+                                .radioItem {
+                                    display: inline-block;
+                                    overflow: hidden;
+                                    width: 100%;
+                                    vertical-align: middle;
+                                    h2 {
+                                        display: inline-block;
+                                        color: #333;
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        width: 70%;
+                                        float: left;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                    }
+                                    span {
+                                        display: inline-block;
+                                        color: #666;
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        width: 30%;
+                                        float: right;
+                                        text-align: right;
+                                        box-sizing: border-box;
+                                        padding-right: 20px;
+                                    }
+                                }
+                            }
+                            &:last-child {
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .resourceRight {
+        width: 24%;
+    }
+}
+.shareBox {
+    margin-top: 30px;
+    .liceImage {
+        width: 78px;
+        height: 28px;
+        display: inline-block;
+        vertical-align: middle;
+        img {
+            line-height: 1;
+            width: 78px;
+            height: 28px;
+            display: inline-block;
+        }
+    }
+}
+
+/deep/ .el-form--label-top .el-form-item__label {
+    font-weight: bold !important;
+    padding-bottom: 0 !important;
+}
+
+.avatar-uploader {
+    .upBtn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /deep/ .el-upload {
+        border: 1px dashed #d9d9d9;
+        border-radius: 6px;
+        width: 320px;
+        height: 240px;
+        background: #eee;
+        cursor: pointer;
+        position: relative;
+        // overflow: hidden;
+    }
+}
+.avatar {
+    width: 320px;
+    height: 240px;
+    display: block;
+}
+.formBottom {
+    border-top: 1px solid #aaa;
+    padding-top: 20px;
+    text-align: right;
+}
+.imgWarn {
+    color: rgb(245, 108, 108);
+    position: absolute;
+    bottom: -39px;
+    left: 0;
+    font-size: 12px;
+    width: 300px;
+    text-align: left;
+}
+.imageUrl /deep/ .el-form-item__label::before {
+    content: "*" !important;
+    color: #f56c6c !important;
+    margin-right: 4px !important;
+}

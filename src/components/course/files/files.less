@@ -1,0 +1,150 @@
+@base-color: #0e38b1;
+.operate-box {
+    display: flex;
+    justify-content: space-around;
+}
+.side-content {
+    .side-tree {
+        border: 1px solid #eee;
+        min-height: 400px;
+        margin-top: 30px;
+    }
+}
+.main-content {
+    margin: 0 10px;
+}
+.button-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.operate-list {
+    li {
+        box-sizing: border-box;
+        padding: 5px 0 5px 20px;
+        cursor: pointer;
+        &:hover {
+            & > a {
+                color: @base-color;
+            }
+        }
+        a {
+            font-size: 14px;
+            color: #333;
+            & > i {
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.button-box {
+    .el-button {
+        padding: 1% 2%;
+    }
+    .el-button + .el-button {
+        margin-left: 5px;
+    }
+}
+.el-popover {
+    min-width: 10px !important;
+}
+
+.button-left {
+    white-space: nowrap;
+    min-width: 10px;
+}
+.button-right {
+    // border: 1px solid red;
+    width: 150px;
+    display: inline-block;
+    white-space: nowrap;
+    & > .el-button {
+        padding: 3% 2%;
+    }
+}
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        font-size: 20px;
+        color: #333;
+    }
+}
+.el-radio + .el-radio {
+    margin-left: 0;
+}
+.radioItem {
+    display: block;
+    margin-bottom: 20px;
+}
+.demonstration {
+    font-size: 14px;
+}
+.date-group + .date-group {
+    margin-top: 10px;
+}
+.date-group {
+}
+.date-box {
+    padding-left: 20px;
+    .prompText {
+        font-size: 12px;
+        line-height: 1;
+        color: #f56c6c;
+        padding-top: 4px;
+    }
+}
+.access-box {
+    padding-left: 10px;
+}
+.folder-table {
+    .el-input__inner {
+        height: 30px !important;
+        line-height: 30px !important;
+        padding: 0 5px !important;
+    }
+    .fileIcon {
+        display: inline-block;
+        width: 18px;
+        // vertical-align: middle;
+        vertical-align: super;
+    }
+    .fileName {
+        display: inline-block;
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+.el-input__inner {
+    height: 30px !important;
+    line-height: 30px !important;
+    padding: 0 5px !important;
+}
+.reNameTag {
+    cursor: pointer;
+}
+.grey {
+    color: red;
+}
+.arrow {
+    height: 40px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+/deep/ .allCourse-tabs .el-form-item__label {
+    width: auto !important;
+}
+/deep/ .upload-demo .el-upload-list__item .el-progress {
+    display: none !important;
+}
+.tree-name {
+    display: inline-block;
+    width: 156px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

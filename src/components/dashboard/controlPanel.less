@@ -1,0 +1,157 @@
+.cover-image {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+.controlPanel {
+    height: 100%;
+    width: 100%;
+}
+.courseMain {
+    display: flex;
+    padding-right: 30px;
+    justify-content: space-between;
+}
+.courseList {
+    float: left;
+    width: 78%;
+    .section {
+        width: 95%;
+        border: 2px solid #55c21f;
+        height: 90px;
+        border-radius: 4px;
+    }
+    .sectionImg {
+        vertical-align: center;
+        text-align: center;
+        width: 10%;
+        background: #55c21f;
+        height: 100%;
+        display: inline-block;
+        float: left;
+    }
+    .sectionSpan {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .sectionButton {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .sectionButtonPrimary {
+        background: #55c21f;
+        border: 1px solid #55c21f;
+    }
+}
+.courseRight {
+    float: left;
+    width: 20%;
+    // border-left: 1px solid #cf9236;
+    margin-top: 1%;
+}
+.topicList {
+    padding: 3%;
+    .nameBox {
+        height: 52px;
+    }
+}
+.topic {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+}
+.show {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    .courseItem {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border: 1px solid #eee;
+        overflow: hidden;
+        position: relative;
+        width: 300px;
+        box-sizing: border-box;
+        margin: 10px;
+    }
+}
+.show:hover {
+    // box-shadow: 0 0 10px -1px #000;
+}
+.courseItem p {
+    box-sizing: border-box;
+    height: 210px;
+    overflow: hidden;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.iconfont {
+    font-size: 20px;
+}
+.item {
+    margin: 10px 30px 0 10px;
+    /*float: right;*/
+}
+/deep/ .el-badge__content.is-fixed {
+    top: 10px !important;
+}
+.color {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.todo {
+    border-bottom: 1px solid #ccc;
+}
+.todo h3 {
+    display: inline-block;
+    font-weight: 700;
+}
+.todo span {
+    display: inline-block;
+    padding-left: 40%;
+}
+.todoStyle {
+    /*display: inline-block;*/
+    display: block;
+    padding-top: 4%;
+}
+.todoStyle ul li {
+    padding-top: 4%;
+}
+.todoStyle ul li:nth-child(n + 2) {
+    padding-left: 16%;
+}
+.todoStyle ul li i {
+    padding: 0 4%;
+}
+.moreToDo {
+    padding-left: 20%;
+}
+.todoStyle ul li p {
+    /*padding-left: 4%;*/
+    display: inline-block;
+    color: #0138b1;
+    cursor: pointer;
+}
+.todoStyle ul li p:active {
+    color: #0147ff;
+    cursor: pointer;
+}
+.grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+}
+.bg-purple {
+    background: #d3dce6;
+}

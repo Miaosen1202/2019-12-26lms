@@ -1,0 +1,184 @@
+.sTitle{
+    font-size: 20px;
+    color: #333;
+    padding: 24px 0;
+    font-weight: bold;
+}
+.upload-file-btn{
+    display: inline-block
+}
+.upFile-list{
+    li{
+        height: 30px;
+        line-height: 30px;
+        .upFile-title{
+            color: #666;
+            font-size: 14px
+        }
+    }
+}
+.down-template{
+    font-size: 14px;
+    color: #34c29d;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 28px;
+    cursor: pointer;
+}
+.batch-intro{
+    font-size: 14px;
+    color: #666;
+    margin: 15px 0;
+}
+.select-box{
+
+}
+.no-file{
+    width: 700px;
+    height: 40px;
+    border: 1px solid #f13026;
+    background: rgba(241, 48, 38, .04);
+    color: #f13026;
+    line-height: 38px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+.last-batch{
+    padding: 0 10px;
+    h1{
+        padding: 10px;
+        display: flex;
+        justify-content:space-between
+    }
+    .last-batchTitle{
+        font-size: 20px;
+        color: #333;
+        font-weight: bold
+    }
+    .view-recordBtn{
+        font-size: 14px;
+        color: #0e38b1;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+.batch-table{
+    width: 100%;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 30px;
+    thead{
+        th{
+            height: 56px;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: left;
+            &:first-child{
+                width: 40%;
+                border-right: 1px dashed #aaa
+            }
+            &:last-child{
+                padding-left: 20px;
+            }
+        }  
+    }
+    tbody{
+        tr{
+            td{
+                border-top: 1px solid #aaa;
+                padding: 20px;
+                vertical-align: baseline;
+                .import-title{
+                    font-size: 14px;
+                    color: #333;
+                    font-weight: bold;
+                }
+                .import-prompt{
+                    color: #f13026;
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 36px;
+                }
+                .import-list{
+                    li{
+                        line-height: 36px
+                    }
+                }
+                &:first-child{
+                    // width: 40%;
+                    border-right: 1px dashed #aaa;
+                    padding: 20px 0;
+                }  
+                .warn-list{
+                    padding-left: 20px;
+                   li{
+                       font-size: 14px;
+                       color: #666;
+                       line-height: 36px;
+                       list-style-type: disc
+                   } 
+                }
+                .complete-warn{
+                    font-size: 14px;
+                    color: #26be96;
+                    cursor: pointer;
+                    display: block;
+                    padding-left: 20px;
+                    margin-top: 30px;
+                }
+            }
+        } 
+    }
+}
+.imported-title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 8px;
+    padding-top: 14px;
+
+}
+.view-erro{
+    color: #0e38b1;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.view-allErro{
+    font-size: 14px;
+    color: #26be96;
+    cursor: pointer;
+    // display: inline-block;
+}
+.importing{
+    padding: 0 10px;
+}
+.importing-text{
+    font-size: 14px;
+    color: #333;
+    line-height: 32px;
+}
+.progress-bar{
+   background: #0e38b1;
+   height: 40px; 
+   border-radius: 20px;
+   margin: 20px 0;
+}
+.progress-box{
+    width: 80%
+}
+
+.empty-import {
+  text-align: center;
+  padding-top: 3em;
+  font-size: 2em;
+}
+
+
+.more-errors-hide {
+  font-size: 2em;
+  padding-left: 1em;
+}

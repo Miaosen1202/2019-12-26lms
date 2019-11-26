@@ -1,0 +1,37 @@
+diff a/src/components/course/assignments2.vue b/src/components/course/assignments2.vue	(rejected hunks)
+@@ -1317,14 +1315,14 @@ export default {
+-                this.$http
+-                    .post(
+-                        `${process.env.NODE_ENV}/assignmentGroup/weight/edit`,
+-                        this.objweight,
+-                    )
+-                    .then((res) => {
+-                        if (Number(res.data.code) !== 200) {
+-                            this.$message.error(res.data.message);
+-                            this.dialogEditAssignmentGroupWeight = false;
+-                        }
+-                    })
+-                    .catch((err) => {
+-                        console.log(err);
+-                    });
++            this.$http
++                .post(
++                    `${process.env.NODE_ENV}/assignmentGroup/weight/edit`,
++                    this.objweight,
++                )
++                .then((res) => {
++                    if (Number(res.data.code) !== 200) {
++                        this.$message.error(res.data.message);
++                        this.dialogEditAssignmentGroupWeight = false;
++                    }
++                })
++                .catch((err) => {
++                    console.log(err);
++                });
+@@ -2074,2 +2072,4 @@ export default {
+-            this.editAssignmentGroupItemForm.point = assignmentGroupItem.score
+-            === '' || typeof assignmentGroupItem.score === 'undefined'? 0 : assignmentGroupItem.score / 100;
++            this.editAssignmentGroupItemForm.point = assignmentGroupItem.score === ''
++                || typeof assignmentGroupItem.score === 'undefined'
++                ? 0
++                : assignmentGroupItem.score / 100;

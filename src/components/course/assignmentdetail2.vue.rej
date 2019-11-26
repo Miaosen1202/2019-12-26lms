@@ -1,0 +1,8 @@
+diff a/src/components/course/assignmentdetail2.vue b/src/components/course/assignmentdetail2.vue	(rejected hunks)
+@@ -1016,3 +1016,3 @@ export default {
+-    .assignment_point{
+-        width: 193px;
+-    }
++.assignment_point {
++    width: 193px;
++}
