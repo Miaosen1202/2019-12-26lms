@@ -19,7 +19,7 @@
     "element-ui": "^2.10.1",
     "fullcalendar": "^3.10.0",
     "jquery": "^3.4.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "pdfjs-dist": "^2.1.266",
     "pretty-bytes": "^5.2.0",
     "three": "^0.54.0",
